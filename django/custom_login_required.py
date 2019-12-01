@@ -6,7 +6,7 @@ from django.contrib.auth.views import redirect_to_login
 from django.core.handlers.wsgi import WSGIRequest
 
 """
-@login_required 데코레이터의 단점 보완
+@login_required 데코레이터의 단점 보완 - from https://lhy.kr/django-post-request-referer-redirect-decorator
 login 페이지에서 로그인 후 'next'로 redirect 될 때, next에 post 메서드가 포함될 경우 에러를 일으킨다.
 - 인증이 안되었을 경우, HTTP_REFERER를 이용해 로그인 페이지에 접속하기 전 페이지를 next의 주소로 변경 후 redirect_to_login()
     -> 인증된 유저가 아닐 경우, 로그인 페이지로 이동

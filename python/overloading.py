@@ -7,8 +7,10 @@ from functools import singledispatch
 @singledispatch를 이용해 함수 오버로딩을 구현 - fluent python
 mainfunction에 @singledispatch 데코레이터를 이용하고 
 이후 오버로딩할 메서드 또는 함수에 @mainfunction.register(type) 데코레이트 한다.
+type: 구상 클래스인 int, tuple 보다 추상 클래스인 numbers.Integral, abc.MutableSequence를 사용하는 것이 좋다
+-> 호환되는 자료형을 폭넓게 지원할 수 있다.
 
-# main function
+# main function -> generic function
 @singledispatch
 def mainfunction(obj):
     do_stuff...
