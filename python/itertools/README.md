@@ -170,7 +170,7 @@ predicate - 인수 하나를 받는 불리언형 함수
 
 - **`itertools.count(start=0, step=1)`**: start 에서 시작해서 step만큼 증가시키며 숫자를 무한이 생성.
 - **`itertools.cycle(it)`**: 각 항목의 **사본을 저장**한 후, 항목을 무한히 반복.
-- **`itertools.repeat(item, [items])`**: (times만큼) 주어진 item을 무한히 반복.
+- **`itertools.repeat(item, [times])`**: (times만큼) 주어진 item을 무한히 반복.
 
         ct = itertools.count()  
         next(ct)  # 0
