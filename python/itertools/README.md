@@ -196,8 +196,8 @@ predicate - 인수 하나를 받는 불리언형 함수
 
 입력받은 반복형 안의 항목의 순서를 변경하고 새로 생성
 
-- **`itertools.groupby(it, key=None)`:**(<key>, <group>) 형태의 튜플 생성. <key>는 그룹화 기준이 되고, <group>은 그룹 안의 항목을 생성하는 제너레이터. 정렬되어 있거나 군집화 되어 있어야 한다.
-- **`reversed(seq)`:** seq 안의 항목을 역순으로 생성. seq는 sequence 객체 이거나 __reversed__() 특별 메서드를 구현해야 한다.
+- **`itertools.groupby(it, key=None)`:**(\<key>, \<group>) 형태의 튜플 생성. \<key>는 그룹화 기준이 되고, \<group>은 그룹 안의 항목을 생성하는 제너레이터. **정렬되어 있거나 군집화** 되어 있어야 한다.
+- **`reversed(seq)`:** seq 안의 항목을 역순으로 생성. seq는 sequence 객체 이거나 **\_\_reversed\_\_()** 특별 메서드를 구현해야 한다.
 
         list(itertools.groupby('LLLLAAGGG'))  
         # [('L', <itertools._grouper object at 0x103084c18>), 
