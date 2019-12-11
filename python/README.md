@@ -5,3 +5,4 @@
     - **memoization_deco**: memoization을 구현한 데코레이터
     - **overloading**: 파이썬에 없는 오버로딩 구현(범용 함수 생성)
     - **timer_deco**: 동작 시간을 측정하기 위해 사용할 수 있는 timer
+    - **cmp**: 리스트의 요소를 비교 연산을 이용해 가장 큰 숫자 조합 출력 
